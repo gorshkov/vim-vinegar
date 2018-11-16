@@ -53,7 +53,7 @@ function! s:opendir(cmd) abort
         let @# = expand('%')
     endif
     normal! m`
-    execute a:cmd '%:h'
+    execute a:cmd '%:h/'
     call s:seek(alt_file)
   endif
 endfunction
